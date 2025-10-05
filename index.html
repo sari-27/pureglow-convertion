@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>multi-section demo</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+      <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="Screenshot 2025-10-05 155602.png" alt="Brand logo" class="logo">
+                <span class="brand-name">PureGlow</span>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <a href="#hero">Home</a>
+                <a href="#features">Features</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contacts</a>
+            </nav>
+            <button id="navToggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+      </header>  
+      <section id="hero" class="hero">
+        <div class="container hero-inner">
+            <div class="hero-copy">
+                <h1>Natural Hair oil - Strengthen & Shine</h1>
+                <p class="lead">Lightweight, non-greasy formula enriched with argon & jojoba to nourish your scalp and add shine.</p>
+                <div class="heroctas">
+                  <a href="#contact" class="btn btn-primary">Buy Now - $15.99</a>
+                  <a href="#features" class="btn btn-secondary">Learn more</a>  
+                </div>
+            </div>
+            <div class="hero-media">
+                <img src="pexels-alesiakozik-7796313.jpg" alt="product bottle" class="cover">
+            </div>
+        </div>
+      </section>
+       <section id="features" class="section features">
+    <div class="container">
+      <h2 class="section-title">Key Benefits</h2>
+      <div class="features-grid">
+        <article class="feature">
+          <img src="Screenshot 2025-10-05 152957.png" alt="" class="feature-icon">
+          <h3>Deep Nourishment</h3>
+          <p>Penetrates hair fibers to restore moisture and reduce breakage.</p>
+        </article>
+        <article class="feature">
+          <img src="Screenshot 2025-10-05 153012.png" alt="" class="feature-icon">
+          <h3>Lightweight</h3>
+          <p>Non-greasy finish that won't weigh hair down.</p>
+        </article>
+        <article class="feature">
+          <img src="Screenshot 2025-10-05 163801.png" alt="" class="feature-icon">
+          <h3>Safe for All Types</h3>
+          <p>Works for color-treated, curly, and straight hair.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <div class="gallery-grid">
+        <button class="gallery-item" data-src="assets/gallery-1.jpg" aria-label="Open image 1">
+          <img src="kadarius-seegars-CjP0nkn6O88-unsplash.jpg" alt="gallery 1">
+        </button>
+        <button class="gallery-item" data-src="assets/gallery-2.jpg" aria-label="Open image 2">
+          <img src="pexels-freestockpro-12811777.jpg" alt="gallery 2">
+        </button>
+        <button class="gallery-item" data-src="assets/gallery-3.jpg" aria-label="Open image 3">
+          <img src="pexels-karolina-grabowska-4750363.jpg" alt="gallery 3">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section testimonials">
+    <div class="container">
+      <h2 class="section-title">What Customers Say</h2>
+      <div class="test-grid">
+        <blockquote class="test-card">"My hair feels softer in just two weeks." <cite>— Samira</cite></blockquote>
+        <blockquote class="test-card">"Lightweight and effective — love it!" <cite>— Daniel</cite></blockquote>
+        <blockquote class="test-card">"Shine and reduced breakage." <cite>— Leyla</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Contact & Order</h2>
+      <form id="contactForm" class="contact-form">
+        <div class="row">
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+        </div>
+        <textarea id="message" name="message" rows="4" placeholder="Your message or address"></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <div id="formMsg" class="form-msg" aria-live="polite"></div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX (hidden initially) -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lbClose" class="lb-close" aria-label="Close">✕</button>
+    <img id="lbImage" src="" alt="">
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> PureGlow. All rights reserved.</div>
+      <div class="socials">Instagram • Facebook • TikTok</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+      
