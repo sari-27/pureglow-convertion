@@ -228,10 +228,43 @@ html, body {
 }
 /* Responsive */
 @media (max-width:900px){
-  .main-nav{display:none;position:absolute;top:68px;right:20px;background:var(--card);padding:12px;border-radius:8px;box-shadow:0 6px 18px rgba(12,20,27,0.08)}
-  .nav-toggle{display:block}
-  .hero-inner{flex-direction:column-reverse;text-align:center}
-  .hero-media{width:70%}
-  .features-grid{flex-direction:column;align-items:center}
-  .test-grid{flex-direction:column}
+  .main-nav{
+    display:none;
+    position:absolute;
+    top:68px;
+    right:20px;
+    background:var(--card);
+    padding:12px;
+    border-radius:8px;
+    box-shadow:0 6px 18px rgba(12,20,27,0.08);
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1200;
+    min-width: 180px;
+}
+   .nav-toggle {
+    display: block; /* show hamburger button */
+  }
+  /* when JS adds .open, show the nav */
+  .main-nav.open {
+    display: flex;
+  }
+   .main-nav a {
+    display: block;
+    padding: 8px 12px;
+  }
+  .hero-inner{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+  .hero-media{
+    width:70%;
+}
+  .features-grid{
+    flex-direction:column;
+    align-items:center;
+}
+  .test-grid{
+    flex-direction:column;
+}
 }
